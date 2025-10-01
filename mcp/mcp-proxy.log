@@ -1,0 +1,209 @@
+[2025-09-29T07:55:36.074Z] === MCP Proxy Starting ===
+[2025-09-29T07:55:36.076Z] Node version: v22.16.0
+[2025-09-29T07:55:36.077Z] Working directory: C:\Users\anusha.sidhanti\IdeaProjects\mcp\mcp
+[2025-09-29T07:55:36.077Z] Script location: C:\Users\anusha.sidhanti\IdeaProjects\mcp\mcp\mcp-proxy.js
+[2025-09-29T07:55:36.077Z] Base URL: http://localhost:8080/mcp
+[2025-09-29T07:55:36.077Z] Tools defined: 5
+[2025-09-29T07:55:36.078Z] Testing server connectivity...
+[2025-09-29T07:55:36.098Z] Readline interface created
+[2025-09-29T07:55:36.099Z] === MCP Proxy Ready ===
+[2025-09-29T07:55:36.104Z] Waiting for messages from Claude Desktop...
+[2025-09-29T07:55:36.104Z] Log file: C:\Users\anusha.sidhanti\IdeaProjects\mcp\mcp\mcp-proxy.log
+[2025-09-29T07:55:36.255Z] ✓ Server is reachable
+[2025-09-29T08:16:07.384Z] === MCP Proxy Starting ===
+[2025-09-29T08:16:07.386Z] Node version: v22.16.0
+[2025-09-29T08:16:07.386Z] Working directory: C:\Users\anusha.sidhanti\AppData\Local\AnthropicClaude\app-0.13.37
+[2025-09-29T08:16:07.386Z] Script location: C:\Users\anusha.sidhanti\IdeaProjects\mcp\mcp\mcp-proxy.js
+[2025-09-29T08:16:07.387Z] Base URL: http://localhost:8080/mcp
+[2025-09-29T08:16:07.387Z] Tools defined: 5
+[2025-09-29T08:16:07.387Z] Testing server connectivity...
+[2025-09-29T08:16:07.421Z] Readline interface created
+[2025-09-29T08:16:07.422Z] === MCP Proxy Ready ===
+[2025-09-29T08:16:07.422Z] Waiting for messages from Claude Desktop...
+[2025-09-29T08:16:07.422Z] Log file: C:\Users\anusha.sidhanti\IdeaProjects\mcp\mcp\mcp-proxy.log
+[2025-09-29T08:16:07.435Z] Received line: {"method":"initialize","params":{"protocolVersion":"2025-06-18","capabilities":{},"clientInfo":{"name":"claude-ai","version":"0.1.0"}},"jsonrpc":"2.0","id":0}
+[2025-09-29T08:16:07.436Z] Parsed message, method: initialize id: 0
+[2025-09-29T08:16:07.436Z] Handling initialize request
+[2025-09-29T08:16:07.436Z] Sent initialize response
+[2025-09-29T08:16:07.446Z] Received line: {"method":"notifications/initialized","jsonrpc":"2.0"}
+[2025-09-29T08:16:07.447Z] Parsed message, method: notifications/initialized id: 
+[2025-09-29T08:16:07.447Z] Received initialized notification
+[2025-09-29T08:16:07.449Z] Received line: {"method":"tools/list","params":{},"jsonrpc":"2.0","id":1}
+[2025-09-29T08:16:07.450Z] Parsed message, method: tools/list id: 1
+[2025-09-29T08:16:07.450Z] Handling tools/list request
+[2025-09-29T08:16:07.450Z] Sent tools list with 5 tools
+[2025-09-29T08:16:07.451Z] Received line: {"method":"prompts/list","params":{},"jsonrpc":"2.0","id":2}
+[2025-09-29T08:16:07.451Z] Parsed message, method: prompts/list id: 2
+[2025-09-29T08:16:07.451Z] WARNING: Unknown method: prompts/list
+[2025-09-29T08:16:07.452Z] Received line: {"method":"resources/list","params":{},"jsonrpc":"2.0","id":3}
+[2025-09-29T08:16:07.452Z] Parsed message, method: resources/list id: 3
+[2025-09-29T08:16:07.452Z] WARNING: Unknown method: resources/list
+[2025-09-29T08:16:07.748Z] ✓ Server is reachable
+[2025-09-30T13:34:24.561Z] Received line: {"method":"tools/call","params":{"name":"get_task_schema","arguments":{}},"jsonrpc":"2.0","id":4}
+[2025-09-30T13:34:24.563Z] Parsed message, method: tools/call id: 4
+[2025-09-30T13:34:24.563Z] Handling tools/call: get_task_schema
+[2025-09-30T13:34:24.563Z] Arguments: {}
+[2025-09-30T13:34:24.563Z] Calling: GET http://localhost:8080/mcp/schema/tasks
+[2025-09-30T13:34:24.712Z] Response status: 200 
+[2025-09-30T13:34:24.715Z] Response received, data keys: $schema, description, type, title, properties, required, example
+[2025-09-30T13:34:24.715Z] Response sent to Claude, length: 2847
+[2025-09-30T13:35:55.407Z] Received line: {"method":"tools/call","params":{"name":"get_task_schema","arguments":{}},"jsonrpc":"2.0","id":5}
+[2025-09-30T13:35:55.407Z] Parsed message, method: tools/call id: 5
+[2025-09-30T13:35:55.407Z] Handling tools/call: get_task_schema
+[2025-09-30T13:35:55.407Z] Arguments: {}
+[2025-09-30T13:35:55.407Z] Calling: GET http://localhost:8080/mcp/schema/tasks
+[2025-09-30T13:35:55.415Z] Response status: 200 
+[2025-09-30T13:35:55.416Z] Response received, data keys: $schema, description, type, title, properties, required, example
+[2025-09-30T13:35:55.416Z] Response sent to Claude, length: 2847
+[2025-09-30T13:46:19.880Z] Received line: {"method":"tools/call","params":{"name":"insert_tasks","arguments":{"tasks":[{"tags":"design,focus,accessibility","title":"Define focus indicators","status":"TODO","dueDate":"2025-10-28 10:00:00","pri
+[2025-09-30T13:46:19.880Z] Parsed message, method: tools/call id: 6
+[2025-09-30T13:46:19.880Z] Handling tools/call: insert_tasks
+[2025-09-30T13:46:19.880Z] Arguments: {"tasks":[{"tags":"design,focus,accessibility","title":"Define focus indicators","status":"TODO","dueDate":"2025-10-28 10:00:00","priority":"MEDIUM","assignedTo":"neo.ford@company.com","description":"
+[2025-09-30T13:46:19.880Z] Request body length: 444
+[2025-09-30T13:46:19.881Z] Calling: POST http://localhost:8080/mcp/tasks
+[2025-09-30T13:46:20.469Z] Response status: 200 
+[2025-09-30T13:46:20.470Z] Response received, data keys: lastTaskId, firstTaskId, success, message, insertedCount
+[2025-09-30T13:46:20.470Z] Response sent to Claude, length: 217
+[2025-09-30T13:46:22.938Z] Received line: {"method":"tools/call","params":{"name":"insert_tasks","arguments":{"tasks":[{"tags":"design,focus,accessibility","title":"Define focus indicators","status":"TODO","dueDate":"2025-10-28 10:00:00","pri
+[2025-09-30T13:46:22.939Z] Parsed message, method: tools/call id: 7
+[2025-09-30T13:46:22.939Z] Handling tools/call: insert_tasks
+[2025-09-30T13:46:22.939Z] Arguments: {"tasks":[{"tags":"design,focus,accessibility","title":"Define focus indicators","status":"TODO","dueDate":"2025-10-28 10:00:00","priority":"MEDIUM","assignedTo":"neo.ford@company.com","description":"
+[2025-09-30T13:46:22.939Z] Request body length: 21679
+[2025-09-30T13:46:22.939Z] Calling: POST http://localhost:8080/mcp/tasks
+[2025-09-30T13:46:23.293Z] Response status: 200 
+[2025-09-30T13:46:23.294Z] Response received, data keys: lastTaskId, firstTaskId, success, message, insertedCount
+[2025-09-30T13:46:23.295Z] Response sent to Claude, length: 219
+[2025-09-30T18:54:49.916Z] === MCP Proxy Starting ===
+[2025-09-30T18:54:49.919Z] Node version: v22.16.0
+[2025-09-30T18:54:49.919Z] Working directory: C:\Users\anusha.sidhanti\AppData\Local\AnthropicClaude\app-0.13.37
+[2025-09-30T18:54:49.919Z] Script location: C:\Users\anusha.sidhanti\IdeaProjects\mcp\mcp\mcp-proxy.js
+[2025-09-30T18:54:49.920Z] Base URL: http://localhost:8080/mcp
+[2025-09-30T18:54:49.920Z] Tools defined: 5
+[2025-09-30T18:54:49.920Z] Testing server connectivity...
+[2025-09-30T18:54:49.966Z] Readline interface created
+[2025-09-30T18:54:49.967Z] === MCP Proxy Ready ===
+[2025-09-30T18:54:49.967Z] Waiting for messages from Claude Desktop...
+[2025-09-30T18:54:49.967Z] Log file: C:\Users\anusha.sidhanti\IdeaProjects\mcp\mcp\mcp-proxy.log
+[2025-09-30T18:54:49.973Z] Received line: {"method":"initialize","params":{"protocolVersion":"2025-06-18","capabilities":{},"clientInfo":{"name":"claude-ai","version":"0.1.0"}},"jsonrpc":"2.0","id":0}
+[2025-09-30T18:54:49.973Z] Parsed message, method: initialize id: 0
+[2025-09-30T18:54:49.974Z] Handling initialize request
+[2025-09-30T18:54:49.974Z] Sent initialize response
+[2025-09-30T18:54:49.994Z] Received line: {"method":"notifications/initialized","jsonrpc":"2.0"}
+[2025-09-30T18:54:49.995Z] Parsed message, method: notifications/initialized id: 
+[2025-09-30T18:54:49.996Z] Received initialized notification
+[2025-09-30T18:54:49.997Z] Received line: {"method":"tools/list","params":{},"jsonrpc":"2.0","id":1}
+[2025-09-30T18:54:49.998Z] Parsed message, method: tools/list id: 1
+[2025-09-30T18:54:49.998Z] Handling tools/list request
+[2025-09-30T18:54:49.998Z] Sent tools list with 5 tools
+[2025-09-30T18:54:49.998Z] Received line: {"method":"prompts/list","params":{},"jsonrpc":"2.0","id":2}
+[2025-09-30T18:54:49.998Z] Parsed message, method: prompts/list id: 2
+[2025-09-30T18:54:49.999Z] WARNING: Unknown method: prompts/list
+[2025-09-30T18:54:49.999Z] Received line: {"method":"resources/list","params":{},"jsonrpc":"2.0","id":3}
+[2025-09-30T18:54:49.999Z] Parsed message, method: resources/list id: 3
+[2025-09-30T18:54:49.999Z] WARNING: Unknown method: resources/list
+[2025-09-30T18:54:50.047Z] ✓ Server is reachable
+[2025-09-30T19:33:55.475Z] === MCP Proxy Starting ===
+[2025-09-30T19:33:55.477Z] Node version: v22.16.0
+[2025-09-30T19:33:55.477Z] Working directory: C:\Users\anusha.sidhanti\AppData\Local\AnthropicClaude\app-0.13.37
+[2025-09-30T19:33:55.477Z] Script location: C:\Users\anusha.sidhanti\IdeaProjects\mcp\mcp\mcp-proxy.js
+[2025-09-30T19:33:55.478Z] Base URL: http://localhost:8080/mcp
+[2025-09-30T19:33:55.478Z] Tools defined: 5
+[2025-09-30T19:33:55.478Z] Testing server connectivity...
+[2025-09-30T19:33:55.508Z] Readline interface created
+[2025-09-30T19:33:55.508Z] === MCP Proxy Ready ===
+[2025-09-30T19:33:55.509Z] Waiting for messages from Claude Desktop...
+[2025-09-30T19:33:55.509Z] Log file: C:\Users\anusha.sidhanti\IdeaProjects\mcp\mcp\mcp-proxy.log
+[2025-09-30T19:33:55.515Z] Received line: {"method":"initialize","params":{"protocolVersion":"2025-06-18","capabilities":{},"clientInfo":{"name":"claude-ai","version":"0.1.0"}},"jsonrpc":"2.0","id":0}
+[2025-09-30T19:33:55.515Z] Parsed message, method: initialize id: 0
+[2025-09-30T19:33:55.515Z] Handling initialize request
+[2025-09-30T19:33:55.515Z] Sent initialize response
+[2025-09-30T19:33:55.528Z] ✓ Server is reachable
+[2025-09-30T19:33:55.727Z] Received line: {"method":"notifications/initialized","jsonrpc":"2.0"}
+[2025-09-30T19:33:55.727Z] Parsed message, method: notifications/initialized id: 
+[2025-09-30T19:33:55.727Z] Received initialized notification
+[2025-09-30T19:33:55.734Z] Received line: {"method":"tools/list","params":{},"jsonrpc":"2.0","id":1}
+[2025-09-30T19:33:55.735Z] Parsed message, method: tools/list id: 1
+[2025-09-30T19:33:55.735Z] Handling tools/list request
+[2025-09-30T19:33:55.735Z] Sent tools list with 5 tools
+[2025-09-30T19:33:55.735Z] Received line: {"method":"prompts/list","params":{},"jsonrpc":"2.0","id":2}
+[2025-09-30T19:33:55.735Z] Parsed message, method: prompts/list id: 2
+[2025-09-30T19:33:55.735Z] WARNING: Unknown method: prompts/list
+[2025-09-30T19:33:55.736Z] Received line: {"method":"resources/list","params":{},"jsonrpc":"2.0","id":3}
+[2025-09-30T19:33:55.736Z] Parsed message, method: resources/list id: 3
+[2025-09-30T19:33:55.736Z] WARNING: Unknown method: resources/list
+[2025-09-30T19:38:56.084Z] === MCP Proxy Starting ===
+[2025-09-30T19:38:56.088Z] Node version: v22.16.0
+[2025-09-30T19:38:56.088Z] Working directory: C:\Users\anusha.sidhanti\AppData\Local\AnthropicClaude\app-0.13.37
+[2025-09-30T19:38:56.088Z] Script location: C:\Users\anusha.sidhanti\IdeaProjects\mcp\mcp\mcp-proxy.js
+[2025-09-30T19:38:56.088Z] Base URL: http://localhost:8080/mcp
+[2025-09-30T19:38:56.089Z] Tools defined: 5
+[2025-09-30T19:38:56.089Z] Testing server connectivity...
+[2025-09-30T19:38:56.151Z] Readline interface created
+[2025-09-30T19:38:56.151Z] === MCP Proxy Ready ===
+[2025-09-30T19:38:56.152Z] Waiting for messages from Claude Desktop...
+[2025-09-30T19:38:56.152Z] Log file: C:\Users\anusha.sidhanti\IdeaProjects\mcp\mcp\mcp-proxy.log
+[2025-09-30T19:38:56.164Z] Received line: {"method":"initialize","params":{"protocolVersion":"2025-06-18","capabilities":{},"clientInfo":{"name":"claude-ai","version":"0.1.0"}},"jsonrpc":"2.0","id":0}
+[2025-09-30T19:38:56.165Z] Parsed message, method: initialize id: 0
+[2025-09-30T19:38:56.165Z] Handling initialize request
+[2025-09-30T19:38:56.165Z] Sent initialize response
+[2025-09-30T19:38:56.171Z] ✗ Server connectivity test failed: request to http://localhost:8080/mcp/help failed, reason: 
+[2025-09-30T19:38:57.685Z] Received line: {"method":"notifications/initialized","jsonrpc":"2.0"}
+[2025-09-30T19:38:57.685Z] Parsed message, method: notifications/initialized id: 
+[2025-09-30T19:38:57.685Z] Received initialized notification
+[2025-09-30T19:38:57.686Z] Received line: {"method":"tools/list","params":{},"jsonrpc":"2.0","id":1}
+[2025-09-30T19:38:57.686Z] Parsed message, method: tools/list id: 1
+[2025-09-30T19:38:57.686Z] Handling tools/list request
+[2025-09-30T19:38:57.686Z] Sent tools list with 5 tools
+[2025-09-30T19:38:57.687Z] Received line: {"method":"prompts/list","params":{},"jsonrpc":"2.0","id":2}
+[2025-09-30T19:38:57.687Z] Parsed message, method: prompts/list id: 2
+[2025-09-30T19:38:57.687Z] WARNING: Unknown method: prompts/list
+[2025-09-30T19:38:57.687Z] Received line: {"method":"resources/list","params":{},"jsonrpc":"2.0","id":3}
+[2025-09-30T19:38:57.687Z] Parsed message, method: resources/list id: 3
+[2025-09-30T19:38:57.687Z] WARNING: Unknown method: resources/list
+[2025-10-01T08:27:51.310Z] === MCP Proxy Starting ===
+[2025-10-01T08:27:51.313Z] Node version: v22.16.0
+[2025-10-01T08:27:51.313Z] Working directory: C:\Users\anusha.sidhanti\AppData\Local\AnthropicClaude\app-0.13.37
+[2025-10-01T08:27:51.313Z] Script location: C:\Users\anusha.sidhanti\IdeaProjects\mcp\mcp\mcp-proxy.js
+[2025-10-01T08:27:51.314Z] Base URL: http://localhost:8080/mcp
+[2025-10-01T08:27:51.314Z] Tools defined: 5
+[2025-10-01T08:27:51.314Z] Testing server connectivity...
+[2025-10-01T08:27:51.347Z] Readline interface created
+[2025-10-01T08:27:51.347Z] === MCP Proxy Ready ===
+[2025-10-01T08:27:51.348Z] Waiting for messages from Claude Desktop...
+[2025-10-01T08:27:51.348Z] Log file: C:\Users\anusha.sidhanti\IdeaProjects\mcp\mcp\mcp-proxy.log
+[2025-10-01T08:27:51.354Z] Received line: {"method":"initialize","params":{"protocolVersion":"2025-06-18","capabilities":{},"clientInfo":{"name":"claude-ai","version":"0.1.0"}},"jsonrpc":"2.0","id":0}
+[2025-10-01T08:27:51.355Z] Parsed message, method: initialize id: 0
+[2025-10-01T08:27:51.355Z] Handling initialize request
+[2025-10-01T08:27:51.355Z] Sent initialize response
+[2025-10-01T08:27:51.367Z] Received line: {"method":"notifications/initialized","jsonrpc":"2.0"}
+[2025-10-01T08:27:51.368Z] Parsed message, method: notifications/initialized id: 
+[2025-10-01T08:27:51.368Z] Received initialized notification
+[2025-10-01T08:27:51.368Z] Received line: {"method":"tools/list","params":{},"jsonrpc":"2.0","id":1}
+[2025-10-01T08:27:51.369Z] Parsed message, method: tools/list id: 1
+[2025-10-01T08:27:51.369Z] Handling tools/list request
+[2025-10-01T08:27:51.369Z] Sent tools list with 5 tools
+[2025-10-01T08:27:51.369Z] Received line: {"method":"prompts/list","params":{},"jsonrpc":"2.0","id":2}
+[2025-10-01T08:27:51.369Z] Parsed message, method: prompts/list id: 2
+[2025-10-01T08:27:51.369Z] WARNING: Unknown method: prompts/list
+[2025-10-01T08:27:51.370Z] Received line: {"method":"resources/list","params":{},"jsonrpc":"2.0","id":3}
+[2025-10-01T08:27:51.370Z] Parsed message, method: resources/list id: 3
+[2025-10-01T08:27:51.370Z] WARNING: Unknown method: resources/list
+[2025-10-01T08:27:51.417Z] ✓ Server is reachable
+[2025-10-01T11:54:06.963Z] Received line: {"method":"tools/call","params":{"name":"insert_tasks","arguments":{"tasks":[{"tags":"security,secrets,audit","title":"Audit secret exposure","status":"TODO","dueDate":"2025-10-07 09:00:00","priority"
+[2025-10-01T11:54:06.967Z] Parsed message, method: tools/call id: 4
+[2025-10-01T11:54:06.967Z] Handling tools/call: insert_tasks
+[2025-10-01T11:54:06.967Z] Arguments: {"tasks":[{"tags":"security,secrets,audit","title":"Audit secret exposure","status":"TODO","dueDate":"2025-10-07 09:00:00","priority":"URGENT","assignedTo":"honor.cole@company.com","description":"Chec
+[2025-10-01T11:54:06.968Z] Request body length: 10853
+[2025-10-01T11:54:06.968Z] Calling: POST http://localhost:8080/mcp/tasks
+[2025-10-01T11:54:07.914Z] Response status: 200 
+[2025-10-01T11:54:07.917Z] Response received, data keys: lastTaskId, firstTaskId, success, message, insertedCount
+[2025-10-01T11:54:07.917Z] Response sent to Claude, length: 221
+[2025-10-01T12:11:47.860Z] Received line: {"method":"tools/call","params":{"name":"insert_tasks","arguments":{"tasks":[{"tags":"security,signing,api","title":"Implement request signing","status":"TODO","dueDate":"2025-10-13 11:00:00","priorit
+[2025-10-01T12:11:47.861Z] Parsed message, method: tools/call id: 5
+[2025-10-01T12:11:47.861Z] Handling tools/call: insert_tasks
+[2025-10-01T12:11:47.861Z] Arguments: {"tasks":[{"tags":"security,signing,api","title":"Implement request signing","status":"TODO","dueDate":"2025-10-13 11:00:00","priority":"HIGH","assignedTo":"legacy.diaz@company.com","description":"Add
+[2025-10-01T12:11:47.862Z] Request body length: 10608
+[2025-10-01T12:11:47.862Z] Calling: POST http://localhost:8080/mcp/tasks
+[2025-10-01T12:11:48.189Z] Response status: 200 
+[2025-10-01T12:11:48.192Z] Response received, data keys: lastTaskId, firstTaskId, success, message, insertedCount
+[2025-10-01T12:11:48.192Z] Response sent to Claude, length: 222

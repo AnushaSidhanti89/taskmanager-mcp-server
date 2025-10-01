@@ -1,0 +1,35 @@
+version: '3.8'
+services:
+  postgres:
+    image: postgres:15
+    container_name: taskdb-postgres
+    environment:
+      POSTGRES_DB: taskdb
+      POSTGRES_USER: task_user
+      POSTGRES_PASSWORD: task_pass
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - task-network
+
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: taskdb-pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    ports:
+      - "8081:80"
+    depends_on:
+      - postgres
+    networks:
+      - task-network
+
+volumes:
+  pgdata:
+
+networks:
+  task-network:
+    driver: bridge

@@ -1,0 +1,17 @@
+{
+  "name": "task-manager-mcp-proxy",
+  "version": "1.0.0",
+  "description": "MCP Proxy for Task Manager Spring Boot Server",
+  "type": "module",
+  "main": "mcp-proxy.js",
+  "scripts": {
+    "start": "node mcp-proxy.js",
+    "test": "node mcp-proxy.js"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
